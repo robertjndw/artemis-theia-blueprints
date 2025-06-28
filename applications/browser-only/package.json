@@ -89,6 +89,14 @@
     "start": "theia start",
     "watch": "concurrently --kill-others -n tsc,build -c red,yellow \"tsc -b -w --preserveWatchOutput\" \"yarn -s watch:bundle\"",
     "update:theia": "ts-node ../../scripts/update-theia-version.ts",
-    "update:next": "ts-node ../../scripts/update-theia-version.ts next"
+    "update:next": "ts-node ../../scripts/update-theia-version.ts next",
+    "download:plugins": "theia download:plugins",
+    "prepare:plugins": "node ./prepare-plugins.js"
+  },
+  "theiaPluginsDir": "plugins",
+  "theiaPlugins": {
+    "robertjndw.ts-executor-web" : "https://github.com/robertjndw/ts-executor-web/releases/download/v0.0.0/ts-executor-web-0.0.1.vsix",
+    "vscode.typescript": "https://open-vsx.org/api/vscode/typescript/1.95.3/file/vscode.typescript-1.95.3.vsix",
+    "vscode.typescript-language-features": "https://open-vsx.org/api/vscode/typescript-language-features/1.95.3/file/vscode.typescript-language-features-1.95.3.vsix"
   }
 }

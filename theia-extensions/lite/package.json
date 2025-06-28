@@ -5,6 +5,7 @@
   "dependencies": {
     "@theia/core": "1.62.2",
     "@theia/filesystem": "1.62.2",
+    "@theia/terminal": "1.62.2",
     "@theia/plugin-ext": "1.62.2"
   },
   "theiaExtensions": [
